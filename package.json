@@ -1,5 +1,5 @@
 {
-  "name": "@turbowarp/sbdl",
+  "name": "sidekick-sbdl",
   "version": "2.3.3",
   "description": "A downloader for Scratch 1, 2, or 3 projects.",
   "type": "module",
@@ -32,7 +32,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@turbowarp/json": "^0.1.2",
+    "sidekick-json": "^0.1.2",
     "cross-fetch": "^3.1.5",
     "jszip": "^3.10.1"
   },
