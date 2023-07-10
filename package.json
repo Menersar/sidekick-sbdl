@@ -1,7 +1,7 @@
 {
   "name": "sidekick-sbdl",
   "version": "2.3.3",
-  "description": "A downloader for Scratch 1, 2, or 3 projects.",
+  "description": "A downloader for Scratch 1, 2, or 3 projects; version customized for Sidekick.",
   "type": "module",
   "keywords": [
     "scratch"
