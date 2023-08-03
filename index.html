@@ -340,7 +340,9 @@
       <h2>Unshared projects</h2>
       <p>
         Unshared projects are no longer accessible using this tool due to Scratch API changes.
-        <a href="https://docs.turbowarp.org/unshared-projects">More information</a>.
+        <!-- !!! CHANGE !!! -->
+        <!-- <a href="https://github.com/Mixality/Sidekick#unshared-projects">More information</a>. -->
+        <a href="https://github.com/Menersar/Sidekick#unshared-projects">More information</a>.
       </p>
 
       <h2>Asset viewer</h2>
@@ -665,9 +667,13 @@
           let errorMessage = '❌ ';
           if (e && e.name === 'CanNotAccessProjectError') {
             if (legacy) {
-              errorMessage += 'The project does not exist, the ID is invalid, your network blocks turbowarp.org, or the project was made after January 2, 2019 so no legacy version is available.';
+              // !!! CHANGE !!!
+            //   errorMessage += 'The project does not exist, the ID is invalid, your network blocks mixality.github.io, or the project was made after January 2, 2019 so no legacy version is available.';
+              errorMessage += 'The project does not exist, the ID is invalid, your network blocks menersar.github.io, or the project was made after January 2, 2019 so no legacy version is available.';
             } else {
-              errorMessage += 'The project does not exist, the ID is invalid, or your network blocks turbowarp.org.';
+              // !!! CHANGE !!!
+            //   errorMessage += 'The project does not exist, the ID is invalid, or your network blocks mixality.github.io.';
+              errorMessage += 'The project does not exist, the ID is invalid, or your network blocks menersar.github.io.';
             }
           } else {
             errorMessage += e;

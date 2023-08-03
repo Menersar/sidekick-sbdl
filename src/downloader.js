@@ -1,6 +1,6 @@
 import JSZip from 'jszip';
 import fetch from 'cross-fetch';
-import * as ExtendedJSON from '@turbowarp/json';
+import * as ExtendedJSON from 'sidekick-json';
 import {AbortError, CanNotAccessProjectError, HTTPError} from './errors.js';
 import fetchAsArrayBuffer from './safer-fetch.js';
 import fetchAsArrayBufferWithProgress from './fetch-with-progress.js';
@@ -522,8 +522,11 @@ export const getProjectMetadata = async (id, options) => {
       `https://api.scratch.mit.edu/projects/${id}`
     ] :
     [
-      `https://trampoline.turbowarp.org/api/projects/${id}`,
-      `https://trampoline.turbowarp.xyz/api/projects/${id}`,
+        // !!! CHANGE !!!
+    //   `https://trampoline.turbowarp.org/api/projects/${id}`,
+    //   `https://trampoline.turbowarp.xyz/api/projects/${id}`,
+      `https://api.scratch.mit.edu/projects/${id}`,
+      `https://api.scratch.mit.edu/projects/${id}`,
     ]
   );
   let firstError = null;

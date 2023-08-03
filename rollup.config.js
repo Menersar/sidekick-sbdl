@@ -1,7 +1,7 @@
 import commonjs from '@rollup/plugin-commonjs';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 
-const external = ['jszip', 'cross-fetch', '@turbowarp/json'];
+const external = ['jszip', 'cross-fetch', 'sidekick-json'];
 
 export default [
   {

@@ -25,3 +25,5 @@ dist-ssr
 
 # Bundlded JS
 lib
+
+.history
