@@ -520,43 +520,14 @@ export const getProjectMetadata = async (id, options) => {
     environment.canAccessScratchAPI ?
     [
         `https://api.scratch.mit.edu/projects/${id}`
-
-
         // !!! CHANGE !!!
-    //   `https://api.scratch.mit.edu/projects/${id}`
-    //   `https://mixality.github.io/Sidekick/api/projects/${id}`
-    //   `https://menersar.github.io/Sidekick/api/projects/${id}`
     ] :
     [
-        // `https://api.scratch.mit.edu/projects/${id}`,
         `https://api.scratch.mit.edu/projects/${id}`,
-
-        
+        `https://api.scratch.mit.edu/projects/${id}`,
         // !!! t CHANGE !!!
-        // `https://trampoline.turbowarp.org/api/projects/${id}`,
-        // `https://trampoline.turbowarp.xyz/api/projects/${id}`,
-
-        // `https://mixality.github.io/Sidekick/trampoline/api/projects/${id}`,
-        // `https://mixality.github.io/Sidekick/trampoline/api/projects/${id}`,
-        // `https://menersar.github.io/Sidekick/trampoline/api/projects/${id}`,
-        // `https://menersar.github.io/Sidekick/trampoline/api/projects/${id}`,
-
-
         // !!!!
         // !!! ???
-        // `https://api.scratch.mit.edu/projects/${id}?nocache=${Date.now()}`,
-        // `https://api.scratch.mit.edu/projects/${id}?nocache=${Date.now()}`,
-        // `https://api.scratch.mit.edu/projects/${id}?nocache=${Date.now()}`,
-        // `https://api.scratch.mit.edu/projects/${id}?nocache=${Date.now()}`,
-
-        
-        // `https://api.scratch.mit.edu/projects/${id}`,
-        // `https://api.scratch.mit.edu/projects/${id}`,
-        
-        // `https://mixality.github.io/Sidekick/api/projects/${id}`,
-        // // `https://mixality.github.io/Sidekick/api/projects/${id}`,
-        // `https://menersar.github.io/Sidekick/api/projects/${id}`,
-        // `https://menersar.github.io/Sidekick/api/projects/${id}`,
     ]
   );
   let firstError = null;
