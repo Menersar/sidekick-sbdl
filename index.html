@@ -44,10 +44,10 @@
           color: #4af;
         }
         a:visited {
-          color: rgb(255, 153, 255);
+          color: #ff99ff;
         }
         a:active {
-          color: rgb(247, 80, 80);
+          color: #f75050;
         }
       }
 
@@ -259,7 +259,10 @@
       </p>
 
       <div class="project-input-outer">
-        <input class="project-input" value="https://scratch.mit.edu/projects/" spellcheck="false" autocomplete="off">
+        <label>
+            Project input: 
+            <input class="project-input" value="https://scratch.mit.edu/projects/" spellcheck="false" autocomplete="off">
+        </label>
         <script>
           // The script down below will take a bit to load. We have this separate script so the ID's input
           // will have the correct state immediately.
@@ -669,11 +672,13 @@
             if (legacy) {
               // !!! CHANGE !!!
             //   errorMessage += 'The project does not exist, the ID is invalid, your network blocks mixality.github.io, or the project was made after January 2, 2019 so no legacy version is available.';
-              errorMessage += 'The project does not exist, the ID is invalid, your network blocks menersar.github.io, or the project was made after January 2, 2019 so no legacy version is available.';
+            //   errorMessage += 'The project does not exist, the ID is invalid, your network blocks menersar.github.io, or the project was made after January 2, 2019 so no legacy version is available.';
+              errorMessage += 'The project does not exist, the ID is invalid, your network blocks scratch.mit.edu, or the project was made after January 2, 2019 so no legacy version is available.';
             } else {
               // !!! CHANGE !!!
             //   errorMessage += 'The project does not exist, the ID is invalid, or your network blocks mixality.github.io.';
-              errorMessage += 'The project does not exist, the ID is invalid, or your network blocks menersar.github.io.';
+            //   errorMessage += 'The project does not exist, the ID is invalid, or your network blocks menersar.github.io.';
+              errorMessage += 'The project does not exist, the ID is invalid, or your network blocks scratch.mit.edu.';
             }
           } else {
             errorMessage += e;

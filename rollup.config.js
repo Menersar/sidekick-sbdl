@@ -1,5 +1,6 @@
 import commonjs from '@rollup/plugin-commonjs';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
+// import * as sidekickJson from 'sidekick-json';
 
 const external = ['jszip', 'cross-fetch', 'sidekick-json'];
 
@@ -11,6 +12,7 @@ export default [
       file: 'lib/bundle-node.cjs',
       format: 'cjs'
     },
+    // sidekickJson,
     external
   },
   {
@@ -20,6 +22,7 @@ export default [
       file: 'lib/bundle-web.cjs',
       format: 'cjs'
     },
+    // sidekickJson,
     external
   },
   {
@@ -36,6 +39,8 @@ export default [
       nodeResolve({
         browser: true
       })
+    //   ,
+    //   sidekickJson
     ]
   }
 ];

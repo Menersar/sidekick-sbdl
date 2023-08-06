@@ -9,12 +9,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/forkphorus/sb-downloader.git"
+    "url": "git+https://github.com/Menersar/sidekick-sbdl.git"
   },
   "bugs": {
-    "url": "https://github.com/forkphorus/sb-downloader/issues"
+    "url": "https://github.com/Menersar/sidekick-sbdl/issues"
   },
-  "homepage": "https://forkphorus.github.io/sb-downloader/",
+  "homepage": "https://menersar.github.io/Sidekick/sidekick-sbdl/",
   "main": "./lib/bundle-node.cjs",
   "browser": "./lib/bundle-web.cjs",
   "types": "./lib/types/downloader.d.ts",
