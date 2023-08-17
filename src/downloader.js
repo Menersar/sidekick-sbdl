@@ -523,8 +523,10 @@ export const getProjectMetadata = async (id, options) => {
         // !!! CHANGE !!!
     ] :
     [
-        `https://api.scratch.mit.edu/projects/${id}`,
-        `https://api.scratch.mit.edu/projects/${id}`,
+        // `https://api.scratch.mit.edu/projects/${id}`,
+        // `https://api.scratch.mit.edu/projects/${id}`,
+        `https://trampoline.turbowarp.org/api/projects/${id}`,
+        `https://trampoline.turbowarp.xyz/api/projects/${id}`,
         // !!! t CHANGE !!!
         // !!!!
         // !!! ???
