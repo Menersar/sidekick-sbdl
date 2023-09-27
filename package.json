@@ -1,49 +1,49 @@
 {
-  "name": "sidekick-sbdl",
-  "version": "2.3.3",
-  "description": "A downloader for Scratch 1, 2, or 3 projects; version customized for Sidekick.",
-  "type": "module",
-  "keywords": [
-    "scratch"
-  ],
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Menersar/sidekick-sbdl.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Menersar/sidekick-sbdl/issues"
-  },
-  "homepage": "https://menersar.github.io/Sidekick/sidekick-sbdl/",
-  "main": "./lib/bundle-node.cjs",
-  "browser": "./lib/bundle-web.cjs",
-  "types": "./lib/types/downloader.d.ts",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "prepublishOnly": "rollup -c && tsc",
-    "test": "vitest run"
-  },
-  "bin": {
-    "sbdl": "./src/cli.js"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "cross-fetch": "^3.1.5",
-    "jszip": "^3.10.1",
-    "sidekick-json": "git+https://github.com/Menersar/sidekick-json.git#sidekick"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.2",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@vitejs/plugin-legacy": "^2.0.0",
-    "rollup": "^2.77.2",
-    "terser": "^5.14.2",
-    "typescript": "^4.7.4",
-    "vite": "^3.0.0",
-    "vitest": "^0.21.1"
-  }
+    "name": "sidekick-sbdl",
+    "version": "2.3.3",
+    "description": "A downloader for Scratch 1, 2, or 3 projects; version customized for Sidekick.",
+    "type": "module",
+    "keywords": [
+        "scratch"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Menersar/sidekick-sbdl.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Menersar/sidekick-sbdl/issues"
+    },
+    "homepage": "https://menersar.github.io/sidekick-sbdl/",
+    "main": "./lib/bundle-node.cjs",
+    "browser": "./lib/bundle-web.cjs",
+    "types": "./lib/types/downloader.d.ts",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "prepublishOnly": "rollup -c && tsc",
+        "test": "vitest run"
+    },
+    "bin": {
+        "sbdl": "./src/cli.js"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "cross-fetch": "^3.1.5",
+        "jszip": "^3.10.1",
+        "sidekick-json": "git+https://github.com/Menersar/sidekick-json.git#sidekick"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^22.0.2",
+        "@rollup/plugin-node-resolve": "^13.3.0",
+        "@vitejs/plugin-legacy": "^2.0.0",
+        "rollup": "^2.77.2",
+        "terser": "^5.14.2",
+        "typescript": "^4.7.4",
+        "vite": "^3.0.0",
+        "vitest": "^0.21.1"
+    }
 }
